@@ -1,0 +1,18 @@
+#inner {
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .container {
+      position: relative;
+  
+  }
