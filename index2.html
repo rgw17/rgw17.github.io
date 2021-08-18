@@ -1,67 +1,223 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Signin Template · Bootstrap v5.0</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+  <style>
+    #intro {
+      margin-top: 200px;
+    }
 
-    
+    #introbody {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
 
-    <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    #work {
+      margin-top: 200px;
+    }
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+    #container,
+    #bio {
+      width: 60%;
+    }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    #arrow {
+      display: block;
+      margin: auto;
+    }
 
-    
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-    
-<main class="form-signin">
-  <form>
-    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    #aboutme {
+      margin-top: 120px;
+    }
 
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
+    #aboutdescription {
+      margin-left: 20%;
+      width: 60%;
+    }
+
+    /* #status {
+      color: #fdfefe;
+      position: absolute;
+      z-index: 2;
+      font-family: 'Hammersmith One', sans-serif;
+    }
+
+    #subStatus1 {
+      color: #0ffbf9;
+      color: rgba(15, 251, 249, 0.4);
+      position: absolute;
+      z-index: 3;
+      margin-right: 2px;
+      margin-top: 1px;
+      font-family: 'Hammersmith One', sans-serif;
+    } */
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script>
+
+    var styles = ['developer', 'student', 'creative', 'powerlifter', 'engineer']
+    var i = 0
+
+    function changeText() {
+      setInterval(function () {
+        console.log("test");
+      },
+        3000);
+
+      //   var texts = ["example1", "example2", "example3"];
+      //   var count = 0;
+      //   function changeText() {
+      //     $("#example").text(texts[count]);
+      //     count < 3 ? count++ : count = 0;
+      //   }
+      //   setInterval(changeText, 500);
+    }
+  </script>
+  <title>Hello, world!</title>
+</head>
+
+<body style="background-color: #282a36;">
+  <div id="intro" class="container-fluid">
+    <div class="d-flex justify-content-center">
+      <h1 style="color:#50fa7b">Randall Williams</h1>
     </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
+    <div class="d-flex justify-content-center">
+      <h3 id="status">
+        < developer>
+      </h3>
+      <h3 id="myStatus">
+        Bezos
+      </h3>
+      <!-- <h3 id="subStatus1">
+        < Developer>
+          </Developer>
+      </h3> -->
+      <!-- <h3 id="subStatus2">
+        < Developer>
+          </Developer>
+      </h3> -->
     </div>
-
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
+    <div id="introbody" class="d-flex justify-content-center">
+      <h6 id="bio" style="color:#cccccc">Thanks for stopping by! I'm a software engineer based in San Francisco, CA.
+        Interested
+        in all things full stack web development, space exploration, and investing.</h6>
     </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-  </form>
-</main>
+    <br><br><br><br>
+    <div class="d-flex justify-content-center">
+      <h2 style="color:#8be9fd">Recent work</h2>
+    </div>
+    <svg id="arrow" xmlns="http://www.w3.org/2000/svg" style="color:#8be9fd" width="30" height="30" fill="currentColor"
+      class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+    </svg>
 
+  </div>
+  <div id="work">
+    <div class="container" id="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1 -->
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Inventory Management System</h5>
+              <p class="card-text">Tags: Bootstrap, HTML/CSS, Flask, JavaScript, SQLite, SQLAlchemy</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Grayscale Image Recolorer</h5>
+              <p class="card-text">Tags: Scikit-learn, Tensorflow, Keras</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Instagram Spam Classifier</h5>
+              <p class="card-text">Tags: Scikit-learn, Kaggle</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Stock Portfolio Manager</h5>
+              <p class="card-text">Tags: Bootstrap, HTML/CSS, Java, JavaScript, Firebase, NoSQL, Servlets</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Project Virtus</h5>
+              <p class="card-text">Tags: Unity, C#, Raspberry Pi</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    
-  </body>
+  <div id="aboutme">
+    <div class="d-flex justify-content-center">
+      <img src="cropped-circle.png" height="200px" width="200px">
+    </div>
+    <br>
+    <div class="d-flex justify-content-center">
+      <h2 id="about" style="color:#8be9fd">About:</h2>
+    </div>
+    <p id="aboutdescription" style="color:#cccccc; font-size:22px;">Born and raised in California, I am a senior at the
+      University of
+      Southern California studying Computer Science and
+      Business Administration. I chose to study CS becaues it's the fastest way to instantiate an idea: a business, an
+      algorithm, a game, etc.
+    </p>
+    <br>
+    <p id="aboutdescription" style="color:#cccccc; font-size:22px;">
+      My hobbies include: </p>
+    <ul id="aboutdescription" style="color:#cccccc; font-size:22px; list-style-type:none;">
+      <li>👨‍💻 Working on side projects</li>
+      <li>💪 Bodybuilding</li>
+      <li>🏋️ Powerlifting (I am the former president of the USC Powerlifting Team)</li>
+      <li>🎬 Video Editing </li>
+      <li>🕯️ Reading about theology & philosophy</li>
+    </ul>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
