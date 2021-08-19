@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
@@ -37,6 +42,7 @@
       margin-left: 20%;
       width: 60%;
     }
+    
 
     /* #status {
       color: #fdfefe;
@@ -56,14 +62,10 @@
     } */
   </style>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="styles.css">
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
 
   <script>
 
@@ -135,39 +137,166 @@
               </button>
             </div>
             <div class="modal-body">
-              ...
+              IMS is a full stack web application I built during my internship with AFRL. Because the nature of the tool is unclassified, I made a generic version deployed publically. Its features include: 
+              <br>
+              <br>
+              <ul>
+                <li>Salted and SHA-256 hashed user accounts</li>
+                <li>Office electronics add/remove features</li>
+                <li>Live inventory updates without refresh</li>
+                <li>Download inventory as .csv file</li>
+              </ul>
+              <br>
+              <span >You can try it out here:</span>
             </div>
+            <br>
             <div class="modal-footer">
+              <a href="https://inventorymanagementsystemdev.herokuapp.com/" class="btn btn-outline-danger" style="text-align: left;">Try it out</a>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
       </div>
+      <!-- Second modal -->
+      <div class="modal fade" id="GrayscaleImage" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Grayscale Image Recolorer</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              I trained a Convolutional Neural Network to input grayscale images and output colored ones. 
+              Trained on the CIFAR-10 dataset, the program uses K-Means Clustering to calculate the top 4 colors to be
+              used for recoloring. Because of the high computational complexity needed to train the model, images are limited
+              to 32x32.
+              <br><br>
+              Input images:
+              <img src="birds.png" alt="" style="max-height:100%;
+              max-width:100%;">
+              <br>
+              <br>
+              Replacing images with top 4 colors:
+              <img src="birds2.png" alt="" style="max-height:100%;
+              max-width:100%;">
+              <br><br>
+              Grayscale images used for input:
+              <img src="image.png" alt="" style="max-height:100%;
+              max-width:100%;">
+              <br><br>
+              Artificially recolored images:
+              <img src="birds3.png" alt="" style="max-height:100%;
+              max-width:100%;">
+              <br><br>
+              Accuracy (train vs test):
+              <img src="graph.png" alt="" style="max-height:100%;
+              max-width:100%;">
+            </div>
+            <br>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 3-->
+      <div class="modal fade" id="SpamClassifier" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Instagram Spam Classifier</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            I built a naive Bayes classifier, a popular machine learning algorithm that applies Bayes' theorem. Coding the algorithm from scratch, it multiples each subprobability of each feature, then chooses the label with the highest probability. I trained it using a dataset from Kaggle.
+              <br><br>
+Challenges I ran into were continuous features such as # of followers. Unlike discrete features, continuous ones can have an infinute number of values. To solve this, I created a density function using Gaussian distribution to calculate how many standard deviations a given feature was from the median.
+              <br><br>
+Another problem I ran into were unique features with a probability of 0. Because all subprobabilities are multiplied together, multiplying by 0 could void the entire product. Therefore, I used Laplace smoothing, which "smoothes" to produce a nonzero probability.
+              <br><br>
+Using cross-validation, I was able to predict whether an Instagram account was spam or not with an average of 90.33% accuracy, and a high of 90.33% accuracy. I used NumPy to shuffle tables and parse the CSV.
+            <br><br>
+            <a href="#" class="btn btn-outline-warning" style="text-align: left;">View source code</a>
+</div>
+            <br>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 4 -->
+      <div class="modal fade" id="StockDashboard" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Stock Portfolio Dashboard</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              I created a stock portfolio management website. Part of CSCI 310 group project.
+              <br><br>
+              Features:
+              <ul>
+                <li>Hashed and salted account system</li>
+                <li>120 second inactivity logout</li>
+                <li>3x consecutive incorrect login lockout</li>
+                <li>Bulk stock adding via .csv file input</li>
+                <li>Watchlist and portfolio tables</li>
+                <li>Stock history visualization</li>
+                <li>backend testing w/ JUnit & Mockito</li>
+                <li>frontend testing w/ Selenium & Cucumber</li>
+              </ul>
+              <img src="stockUI1.png" alt="" style="max-height:100%;
+              max-width:100%;">
+              <br><br>
+              <img src="stockUI2.png" alt="" style="max-height:100%;
+              max-width:100%;">
+  </div>
+            <br>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End modal -->
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="card-deck">
                   <!-- Card 1 -->
-
-          <div class="card">
-            <a class="btn btn-default btn-block" data-toggle="modal" data-target="#InventoryManagementSystem">
+          <div class="card" id="inventory">
+            <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal" data-target="#InventoryManagementSystem">
 
             <img class="card-img-top" src="https://via.placeholder.com/300" data-toggle="modal" data-target="#exampleModalCenter" alt="Card image cap">
           </a>
             <div class="card-body">
               <h5 class="card-title">Inventory Management System</h5>
-              <p class="card-text">Tags: Bootstrap, HTML/CSS, Flask, JavaScript, SQLite, SQLAlchemy</p>
+              <p class="card-text">Tags: <div class="badge bg-primary text-wrap" style="width: 4rem;">
+                Bootstrap
+              </div>, HTML/CSS, Flask, JavaScript, SQLite, SQLAlchemy</p>
             </div>
           </div>
             <!-- card two -->
           <div class="card">
+            <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal" data-target="#GrayscaleImage">
             <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+            </a>
             <div class="card-body">
+              
               <h5 class="card-title">Grayscale Image Recolorer</h5>
               <p class="card-text">Tags: Scikit-learn, Tensorflow, Keras</p>
             </div>
           </div>
-          <div class="card">
-            <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+          <div class="card" id="spam">
+            <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal" data-target="#SpamClassifier">
+            <img class="card-img-top" src="spam.png" alt="Card image cap">
+            </a>
             <div class="card-body">
               <h5 class="card-title">Instagram Spam Classifier</h5>
               <p class="card-text">Tags: Scikit-learn, Kaggle</p>
@@ -176,10 +305,12 @@
         </div>
         <br>
         <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+          <div class="card" id="dashboard">
+            <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal" data-target="#StockDashboard">
+            <img class="card-img-top" src="stonks.png" alt="Card image cap">
+          </a>
             <div class="card-body">
-              <h5 class="card-title">Stock Portfolio Manager</h5>
+              <h5 class="card-title">Stock Portfolio Dashboard</h5>
               <p class="card-text">Tags: Bootstrap, HTML/CSS, Java, JavaScript, Firebase, NoSQL, Servlets</p>
             </div>
           </div>
@@ -229,7 +360,14 @@
       <li>🕯️ Reading about theology & philosophy</li>
     </ul>
   </div>
-
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Powered by coffee and protein. Last updated 8/20/21.<br>
+      <a class="text-dark" href="https://mdbootstrap.com/">© 2021 Randall Williams. All rights reserved.</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
