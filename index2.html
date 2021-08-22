@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="styles.css"> -->
 
- <style>
+  <style>
     #intro {
       margin-top: 200px;
     }
@@ -44,13 +45,23 @@
       margin-left: 20%;
       width: 60%;
     }
-    ul {list-style: none}
 
-#bottomList::before {content: "+ "; color:#ff79c6}
-#cardList::before {content: "• "; color:#202020}
+    ul {
+      list-style: none
+    }
+
+    #bottomList::before {
+      content: "+ ";
+      color: #ff79c6
+    }
+
+    #cardList::before {
+      content: "• ";
+      color: #202020
+    }
 
 
-    
+
 
     /* #status {
       color: #fdfefe;
@@ -70,29 +81,29 @@
     } */
   </style>
   <!-- Required meta tags -->
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script>
 
-    var styles = ['developer', 'student', 'creative', 'powerlifter', 'engineer']
+    var styles = ['< developer >', '< student >', '< creative >', '< powerlifter >', '< engineer >']
     var i = 1
 
-    window.setInterval(function(){
-  console.log("here")
-  document.getElementById("status").innerHTML = styles[i];
-  i++;
-  if(i == styles.length)
-  {
-    i = 0;
-  }
-}, 5000);
-    
+    window.setInterval(function () {
+      console.log("here")
+      document.getElementById("status").innerHTML = styles[i];
+      i++;
+      if (i == styles.length) {
+        i = 0;
+      }
+    }, 5000);
+
   </script>
 
   <title>Hello, world!</title>
@@ -101,18 +112,20 @@
 <body style="background-color: #282a36;">
   <div id="intro" class="container-fluid">
     <div class="d-flex justify-content-center">
-     
+
       <h1 style="color:#50fa7b; font-family: 'Libre Baskerville', serif; text-align: center;">Randall Williams</h1>
     </div>
     <div class="d-flex justify-content-center">
-      <h3 id="status" style="color:#8be9fd">< developer ></h3>
+      <h3 id="status" style="color:#8be9fd">
+        < developer >
+      </h3>
       <!-- <h3 id="status">
         < developer>
       </h3>
       <h3 id="me">
         developer
       </h3> -->
-      
+
       <!-- <h3 id="subStatus1">
         < Developer>
           </Developer>
@@ -123,11 +136,22 @@
       </h3> -->
     </div>
     <div id="introbody" class="d-flex justify-content-center">
-      <h6 id="bio" style="color:#cccccc; text-align:center">Thanks for stopping by! I'm a software engineer based in San Francisco, CA.
+      <h6 id="bio" style="color:#cccccc; text-align:center">Thanks for stopping by! I'm a software engineer based in San
+        Francisco, CA.
         Interested
         in all things full stack web development, space exploration, and investing/cryptocurrency.</h6>
     </div>
-    <br><br><br><br>
+    <br>
+    <div class="row">
+      <div class="col text-center">
+        <a href="resume.pdf" target="_blank" class="btn" style="background-color: #ff79c6;">Resume </a>
+        <a href="https://www.linkedin.com/in/randallgwilliams/"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+        <p><a href="mailto:rw15006@usc.edu">Send email</a></p>
+
+        <!-- <button type="button" class="btn" href="/books/a-great-book.pdf" target="_blank" style="text-align: center; background-color: #ff79c6;" ;>Resume</button> -->
+      </div>
+    </div>
+    <br><br><br>
     <div class="d-flex justify-content-center">
       <h2 style="color:#8be9fd">Recent work</h2>
     </div>
@@ -140,7 +164,8 @@
   </div>
   <div id="work">
     <div class="container" id="container">
-      <div class="modal fade" id="InventoryManagementSystem" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal fade" id="InventoryManagementSystem" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -150,7 +175,8 @@
               </button>
             </div>
             <div class="modal-body">
-              IMS is a full stack web application I built during my internship with AFRL. Because the nature of the tool is unclassified, I made a generic version deployed publically. Its features include: 
+              IMS is a full stack web application I built during my internship with AFRL. Because the nature of the tool
+              is unclassified, I made a generic version deployed publically. Its features include:
               <br>
               <br>
               <ul>
@@ -160,18 +186,20 @@
                 <li id="cardList">Download inventory as .csv file</li>
               </ul>
               <br>
-              <span >You can try it out here:</span>
+              <span>You can try it out here:</span>
             </div>
             <br>
             <div class="modal-footer">
-              <a href="https://inventorymanagementsystemdev.herokuapp.com/" class="btn btn-outline-danger" style="text-align: left;">Try it out</a>
+              <a href="https://inventorymanagementsystemdev.herokuapp.com/" class="btn btn-outline-danger"
+                style="text-align: left;">Try it out</a>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
       <!-- Second modal -->
-      <div class="modal fade" id="GrayscaleImage" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal fade" id="GrayscaleImage" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-header">
@@ -181,9 +209,10 @@
               </button>
             </div>
             <div class="modal-body">
-              I trained a Convolutional Neural Network to input grayscale images and output colored ones. 
+              I trained a Convolutional Neural Network to input grayscale images and output colored ones.
               Trained on the CIFAR-10 dataset, the program uses K-Means Clustering to calculate the top 4 colors to be
-              used for recoloring. Because of the high computational complexity needed to train the model, images are limited
+              used for recoloring. Because of the high computational complexity needed to train the model, images are
+              limited
               to 32x32.
               <br><br>
               Input images:
@@ -215,7 +244,8 @@
         </div>
       </div>
       <!-- Modal 3-->
-      <div class="modal fade" id="SpamClassifier" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal fade" id="SpamClassifier" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -225,16 +255,23 @@
               </button>
             </div>
             <div class="modal-body">
-            I built a naive Bayes classifier, a popular machine learning algorithm that applies Bayes' theorem. Coding the algorithm from scratch, it multiples each subprobability of each feature, then chooses the label with the highest probability. I trained it using a dataset from Kaggle.
+              I built a naive Bayes classifier, a popular machine learning algorithm that applies Bayes' theorem. Coding
+              the algorithm from scratch, it multiples each subprobability of each feature, then chooses the label with
+              the highest probability. I trained it using a dataset from Kaggle.
               <br><br>
-Challenges I ran into were continuous features such as # of followers. Unlike discrete features, continuous ones can have an infinute number of values. To solve this, I created a density function using Gaussian distribution to calculate how many standard deviations a given feature was from the median.
+              Challenges I ran into were continuous features such as # of followers. Unlike discrete features,
+              continuous ones can have an infinute number of values. To solve this, I created a density function using
+              Gaussian distribution to calculate how many standard deviations a given feature was from the median.
               <br><br>
-Another problem I ran into were unique features with a probability of 0. Because all subprobabilities are multiplied together, multiplying by 0 could void the entire product. Therefore, I used Laplace smoothing, which "smoothes" to produce a nonzero probability.
+              Another problem I ran into were unique features with a probability of 0. Because all subprobabilities are
+              multiplied together, multiplying by 0 could void the entire product. Therefore, I used Laplace smoothing,
+              which "smoothes" to produce a nonzero probability.
               <br><br>
-Using cross-validation, I was able to predict whether an Instagram account was spam or not with an average of 90.33% accuracy, and a high of 90.33% accuracy. I used NumPy to shuffle tables and parse the CSV.
-            <br><br>
-            <a href="#" class="btn btn-outline-warning" style="text-align: left;">View source code</a>
-</div>
+              Using cross-validation, I was able to predict whether an Instagram account was spam or not with an average
+              of 90.33% accuracy, and a high of 90.33% accuracy. I used NumPy to shuffle tables and parse the CSV.
+              <br><br>
+              <a href="#" class="btn btn-outline-warning" style="text-align: left;">View source code</a>
+            </div>
             <br>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -243,7 +280,8 @@ Using cross-validation, I was able to predict whether an Instagram account was s
         </div>
       </div>
       <!-- Modal 4 -->
-      <div class="modal fade" id="StockDashboard" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal fade" id="StockDashboard" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -271,7 +309,7 @@ Using cross-validation, I was able to predict whether an Instagram account was s
               <br><br>
               <img src="stockUI2.png" alt="" style="max-height:100%;
               max-width:100%;">
-  </div>
+            </div>
             <br>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -280,7 +318,8 @@ Using cross-validation, I was able to predict whether an Instagram account was s
         </div>
       </div>
       <!-- Modal 5 -->
-      <div class="modal fade" id="Virtus" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal fade" id="Virtus" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -291,7 +330,7 @@ Using cross-validation, I was able to predict whether an Instagram account was s
             </div>
             <div class="modal-body">
               Project Virtus.
-  </div>
+            </div>
             <br>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -302,33 +341,38 @@ Using cross-validation, I was able to predict whether an Instagram account was s
       <!-- End modal -->
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="card-deck">
-                  <!-- Card 1 -->
-          <div class="card" id="inventory">
-            <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal" data-target="#InventoryManagementSystem">
+          <!-- Card 1 -->
+          <div class="card" id="inventory" >
+            <a class="btn btn-default btn-block" style="cursor: pointer;" pointer-events: none; data-toggle="modal"
+              data-target="#InventoryManagementSystem">
 
-            <img class="card-img-top" src="https://via.placeholder.com/300" data-toggle="modal" data-target="#exampleModalCenter" alt="Card image cap">
-          </a>
+              <img draggable="false" class="card-img-top" src="database.png" data-toggle="modal" data-target="#exampleModalCenter"
+                alt="Card image cap">
+            </a>
             <div class="card-body">
               <h5 class="card-title">Inventory Management System</h5>
-              <p class="card-text">Tags: <div class="badge bg-primary text-wrap" style="width: 4rem;">
+              <p class="card-text">Tags:
+              <div class="badge bg-primary text-wrap" style="width: 4rem;">
                 Bootstrap
               </div>, HTML/CSS, Flask, JavaScript, SQLite, SQLAlchemy</p>
             </div>
           </div>
-            <!-- card two -->
+          <!-- card two -->
           <div class="card">
-            <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal" data-target="#GrayscaleImage">
-            <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+            <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal"
+              data-target="#GrayscaleImage">
+              <img draggable="false" class="card-img-top" src="pixel-transparent.png" alt="Card image cap">
             </a>
             <div class="card-body">
-              
+
               <h5 class="card-title">Grayscale Image Recolorer</h5>
               <p class="card-text">Tags: Scikit-learn, Tensorflow, Keras</p>
             </div>
           </div>
           <div class="card" id="spam">
-            <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal" data-target="#SpamClassifier">
-            <img class="card-img-top" src="spam.png" alt="Card image cap">
+            <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal"
+              data-target="#SpamClassifier">
+              <img draggable="false" class="card-img-top" src="spam-transparent.png" alt="Card image cap">
             </a>
             <div class="card-body">
               <h5 class="card-title">Instagram Spam Classifier</h5>
@@ -339,9 +383,10 @@ Using cross-validation, I was able to predict whether an Instagram account was s
         <br>
         <div class="card-deck">
           <div class="card" id="dashboard">
-            <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal" data-target="#StockDashboard">
-            <img class="card-img-top" src="stonks.png" alt="Card image cap">
-          </a>
+            <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal"
+              data-target="#StockDashboard">
+              <img draggable="false" class="card-img-top" src="Stonks-transparent.png" alt="Card image cap">
+            </a>
             <div class="card-body">
               <h5 class="card-title">Stock Portfolio Dashboard</h5>
               <p class="card-text">Tags: Bootstrap, HTML/CSS, Java, JavaScript, Firebase, NoSQL, Servlets</p>
@@ -349,21 +394,14 @@ Using cross-validation, I was able to predict whether an Instagram account was s
           </div>
           <div class="card">
             <a class="btn btn-default btn-block" style="cursor: pointer;" data-toggle="modal" data-target="#Virtus">
-            <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+              <img draggable="false" class="card-img-top" src="virtus.png" alt="Card image cap">
             </a>
             <div class="card-body">
               <h5 class="card-title">Project Virtus</h5>
               <p class="card-text">Tags: Unity, C#, Raspberry Pi</p>
             </div>
           </div>
-          <div class="card">
-            <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
+          <div class="card" style="visibility:hidden" ;>
           </div>
         </div>
       </div>
@@ -400,7 +438,7 @@ Using cross-validation, I was able to predict whether an Instagram account was s
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(98, 114, 164, 1);">
       Powered by coffee, protein and binary code. Last updated 8/20/21.<br>
-      <a class="text-dark" href="https://mdbootstrap.com/">© 2021 Randall Williams. All rights reserved.</a>
+      © 2021 Randall Williams. All rights reserved.
     </div>
     <!-- Copyright -->
   </footer>
