@@ -25,13 +25,17 @@
     #introbody {
       margin-left: 15%;
       margin-right: 15%;
+      visibility: hidden;
     }
 
     #work {
       margin-top: 200px;
     }
 
-    #container,
+    #container
+    {
+      width: 60%;
+    }
     #bio {
       width: 60%;
     }
@@ -45,9 +49,11 @@
       margin-top: 120px;
     }
 
-    #aboutdescription {
+    #aboutdescription, #aboutdescription2 {
       margin-left: 20%;
       width: 60%;
+      visibility: hidden;
+
     }
 
     ul {
@@ -63,6 +69,7 @@
       content: "• ";
       color: #202020
     }
+    
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +78,46 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="assets/media/favicon.ico" />
+ 
+  <script>
+    window.setInterval(function () {
 
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // true for mobile device
+        console.log("mobile detected");
+        document.getElementById("introbody").style.visibility = "visible";
+
+        document.getElementById("bio").style.width = "100%";
+        document.getElementById("introbody").style.marginLeft = "%";
+        document.getElementById("introbody").style.marginRight = "11%";
+
+        document.getElementById("aboutdescription").style.width = "90%";
+        document.getElementById("aboutdescription").style.marginLeft = "7%";
+        document.getElementById("aboutdescription").style.fontSize = "16px";
+        document.getElementById("aboutdescription").style.visibility = "visible";
+
+
+        document.getElementById("aboutdescription2").style.visibility = "visible";
+
+        document.getElementById("aboutdescription2").style.width = "100%";
+        document.getElementById("aboutdescription2").style.marginLeft = "0%";
+        document.getElementById("aboutdescription2").style.marginRight = "10%";
+
+        document.getElementById("aboutdescription2").style.fontSize = "18px";
+
+
+
+        
+
+      } else {
+        document.getElementById("introbody").style.visibility = "visible";
+        document.getElementById("aboutdescription").style.visibility = "visible";
+        document.getElementById("aboutdescription2").style.visibility = "visible";
+
+        console.log("desktop detected");
+      }
+    }, 500);
+  </script>
   <script>
 
     var styles = ['< developer >', '< student >', '< creative >', '< powerlifter >', '< engineer >', '< trojan ✌️ >']
@@ -146,10 +192,10 @@
 
     </div>
     <div id="introbody" class="d-flex justify-content-center">
-      <h6 id="bio" style="color:#cccccc; text-align:center">Thanks for stopping by! I'm a software engineer based in San
+      <p id="bio" style="color:#cccccc; text-align:center">Thanks for stopping by! I'm a software engineer based in San
         Francisco, CA.
         Interested
-        in all things full stack web development, space exploration, and investing/cryptocurrency.</h6>
+        in all things full stack web development, space exploration, and blockchain technology.</p>
     </div>
     <br>
     <div class="row">
@@ -163,15 +209,15 @@
           <a href="https://www.linkedin.com/in/randallgwilliams/" target="_blank"><i class="fa fa-linkedin-square"
               style="font-size:45px; color: rgb(255, 121, 198); vertical-align:middle;"></i></a>
           <a href="https://github.com/rgw17" target="_blank" class="btn">
-            <svg xmlns="http://www.w3.org/2000/svg" style="color: #ff79c6;" width="45" height="45" fill="currentColor" class="bi bi-github"
-              viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" style="color: #ff79c6;" width="45" height="45" fill="currentColor"
+              class="bi bi-github" viewBox="0 0 16 16">
               <path
                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
             </svg>
           </a>
           <a href="MAILTO: randall.williams@usc.edu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
-              style="color: #ff79c6; " class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" style="color: #ff79c6; "
+              class="bi bi-envelope-fill" viewBox="0 0 16 16">
               <path
                 d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
             </svg>
@@ -223,8 +269,8 @@
               <br>
               <span>You can try it out <a href="https://inventorymanagementsystemdev.herokuapp.com/"
                   target="_blank">here.</a> <br><br>User = guest, password = florida%</span>
-                  <br><br>
-                  <a href="https://github.com/rgw17/inventory-management" target="_blank">Source code.</a>
+              <br><br>
+              <a href="https://github.com/rgw17/inventory-management" target="_blank">Source code.</a>
             </div>
             <br>
             <div class="modal-footer">
@@ -470,10 +516,9 @@
     <div class="d-flex justify-content-center">
       <h2 id="about" style="color:#8be9fd">About:</h2>
     </div>
-    <p id="aboutdescription" style="color:#cccccc; font-size:22px;">Born and raised in California, I am a senior at the
-      University of
-      Southern California studying Computer Science and
-      Business Administration. I chose to study CS becaues it's the fastest way to instantiate an idea: a business, a
+    <p id="aboutdescription" style="color:#cccccc; font-size:22px;">Born and raised in California, I graduated from USC
+      with a bachelor's degree in Computer Science and Business Administration. Originally I was just studying business,
+      but sophomore year I chose to study CS becaues it's the fastest way to instantiate an idea: a venture, a
       game,
       an algorithm, etc.
       <br><br>
@@ -482,13 +527,14 @@
     <br>
     <p id="aboutdescription" style="color:#cccccc; font-size:22px;">
       My hobbies include: </p>
-    <ul id="aboutdescription" style="color:#cccccc; font-size:22px; list-style-type:none;">
-      <li id="bottomList">👨‍💻 Working on side projects</li>
-      <li id="bottomList">💪 Bodybuilding</li>
-      <li id="bottomList">🏋️ Powerlifting (I am the former president of the USC Powerlifting Team)</li>
+    <ul id="aboutdescription2" style="color:#cccccc; font-size:22px; list-style-type:none;">
+      <li id="bottomList">👨‍💻 Bouncing side project ideas off friends</li>
+      <li id="bottomList">🏋️ Bodybuilding/powerlifting (I was the president of the <a style="color: #ffc72c "
+          href="https://www.instagram.com/uscpowerlifting/" target="_blank"><u>USC Powerlifting Team</u></a>)</li>
       <li id="bottomList">🥾 Hiking & camping</li>
       <li id="bottomList">🎬 Video Editing </li>
-      <li id="bottomList">🕯️ Reading about theology & philosophy</li>
+      <li id="bottomList">📸 Photography (specializing in portraits, portfolio coming soon)</li>
+      <li id="bottomList">🕯️ Theology & philosophy</li>
     </ul>
   </div>
   <br><br>
@@ -496,10 +542,10 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(98, 114, 164, 1);">
 
-      Last updated 8/23/21 | Theme inspired by <a style="color: black" href="https://draculatheme.com/"
+      Last updated 1/1/22 | Theme inspired by <a style="color: black" href="https://draculatheme.com/"
         target="_blank">Dracula</a>.
       <br>
-      © 2021 Randall Williams. All rights reserved.
+      © <script>document.write(new Date().getFullYear());</script> Randall Williams. All rights reserved.
       <br>
       Powered by coffee, protein and binary code.
     </div>
