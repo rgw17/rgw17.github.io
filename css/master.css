@@ -85,6 +85,12 @@
 
     margin-left: auto;
     margin-right: auto;
-    width: 16em;
+    width: 20em;
     text-align: center;
+}
+
+img {
+    
+    max-height: 60% !important;
+
 }
