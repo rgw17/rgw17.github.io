@@ -1,66 +1,161 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <title>Image Gallery</title>
+    <meta name="description" content="Responsive Image Gallery">
+    <meta name="author" content="Tim Wells">
     <link rel="stylesheet" href="css/master.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-<!-- Gallery -->
-<div class="row" id="content">
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-      <img
-        src="assets/media/ali1-min.JPG"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
-  
-      <img
-        src="https://drive.google.com/uc?export=view&id=1gANQHUIpaKaanOn7gPaUnudYUpweK5mf"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Wintry Mountain Landscape"
-      />
+
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <div id="profilePic" class="d-flex justify-content-center">
+        <img src="assets/img/cropped-circle.png" height="100px" width="100px">
     </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="https://drive.google.com/uc?export=view&id=1H3jUOOcSoGu-82GSwcGftTeIqK_55VXm"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Mountains in the Clouds"
-      />
-  
-      <img
-        src="https://drive.google.com/uc?export=view&id=1EM6P0pAYQJcOpxMc8v1OEuaQO4B6uxWO"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
+    <br>
+    <h1 style="text-align: center;">PORTFOLIO V.1</h1>
+    <h6 style="text-align: center;">by randall williams</h6>
+    <br>
+    <br>
+    <br>
+    <p style="text-align: center;"><b>Gallery</b></p>
+    <div id="gallery" class="row gallery">
+        <a href="assets/raw/1.jpg">
+            <img id="img1" class="img-fluid" src="assets/img/1.jpg">
+        </a>
+        <a href="assets/raw/2.jpg">
+            <img id="img2" class="img-fluid" src="assets/img/2.jpg">
+        </a>
+        <a href="assets/raw/3.jpg">
+            <img id="img3" class="img-fluid" src="assets/img/3.jpg">
+        </a>
+        <a href="assets/raw/4.jpg">
+            <img id="img1" class="img-fluid" src="assets/img/4.jpg">
+        </a>
+        <a href="assets/raw/5.jpg">
+            <img id="img2" class="img-fluid" src="assets/img/5.jpg">
+        </a>
+        <a href="assets/raw/6.jpg">
+            <img id="img3" class="img-fluid" src="assets/img/6.jpg">
+        </a>
+        <a href="assets/raw/7.jpg">
+            <img id="img1" class="img-fluid" src="assets/img/7.jpg">
+        </a>
+        <a href="assets/raw/8.JPG">
+            <img id="img2" class="img-fluid" src="assets/img/8.png">
+        </a>
+        <a href="assets/raw/9.jpg">
+            <img id="img3" class="img-fluid" src="assets/img/9.jpg">
+        </a>
+        <a href="assets/raw/10.jpg">
+            <img id="img1" class="img-fluid" src="assets/img/10.jpg">
+        </a>
+        <a href="assets/raw/11.jpg">
+            <img id="img2" class="img-fluid" src="assets/img/11.jpg">
+        </a>
+        <a href="assets/raw/12.jpg">
+            <img id="img2" class="img-fluid" src="assets/img/12.jpg">
+        </a>
+        <a href="assets/raw/13.jpg">
+            <img id="img2" class="img-fluid" src="assets/13.jpg">
+        </a>
+        <a href="assets/Raw/14.JPG">
+            <img id="img2" class="img-fluid" src="assets/img/14.jpg">
+        </a>
+        <a href="assets/raw/15.jpg">
+            <img id="img2" class="img-fluid" src="assets/img/15.jpg">
+        </a>
+        <a href="assets/raw/16.jpg">
+            <img id="img2" class="img-fluid" src="assets/img/16.jpg">
+        </a>
+        <a href="assets/raw/17.jpg">
+            <img id="img2" class="img-fluid" src="assets/img/17.jpg">
+        </a>
+        <a href="assets/raw/18.jpg">
+            <img id="img2" class="img-fluid" src="assets/18.jpg">
+        </a>
+        <!-- <a href="assets/img/6.jpg">
+            <img id="img3" class="img-fluid" src="assets/img/6.jpg">
+        </a>
+        <a href="assets/img/1.jpg">
+            <img id="img1" class="img-fluid" src="assets/img/1.jpg">
+        </a>
+        <a href="assets/img/2.jpg">
+            <img id="img2" class="img-fluid" src="assets/img/2.jpg">
+        </a>
+        <a href="assets/img/3.jpg">
+            <img id="img3" class="img-fluid" src="assets/img/3.jpg">
+        </a>
+        <a href="assets/img/4.jpg">
+            <img id="img1" class="img-fluid" src="assets/img/4.jpg">
+        </a>
+        <a href="assets/img/5.jpg">
+            <img id="img2" class="img-fluid" src="assets/img/5.jpg">
+        </a>
+        <a href="assets/img/6.jpg">
+            <img id="img3" class="img-fluid" src="assets/img/6.jpg">
+        </a>
+        <a href="assets/img/1.jpg">
+            <img id="img1" class="img-fluid" src="assets/img/1.jpg">
+        </a>
+        <a href="assets/img/2.jpg">
+            <img id="img2" class="img-fluid" src="assets/img/2.jpg">
+        </a>
+        <a href="assets/img/3.jpg">
+            <img id="img3" class="img-fluid" src="assets/img/3.jpg">
+        </a>
+        <a href="assets/img/4.jpg">
+            <img id="img1" class="img-fluid" src="assets/img/4.jpg">
+        </a>
+        <a href="assets/img/5.jpg">
+            <img id="img2" class="img-fluid" src="assets/img/5.jpg">
+        </a>
+        <a href="assets/img/6.jpg">
+            <img id="img3" class="img-fluid" src="assets/img/6.jpg">
+        </a> -->
+        <!-- <img id="img2" src="assets/img/4.jpg" loading="lazy">
+        <img id="img3" src="assets/img/2.jpg" loading="lazy">
+        <img id="img1" src="assets/img/6.jpg" loading="lazy">
+        <img id="img2" src="assets/img/3.jpg" loading="lazy">
+        <img id="img3" src="assets/img/5.jpg" loading="lazy">
+
+        <img id="img1" src="assets/img/1.jpg" loading="lazy">
+        <img id="img2" src="assets/img/4.jpg" loading="lazy">
+        <img id="img3" src="assets/img/2.jpg" loading="lazy">
+        <img id="img1" src="assets/img/6.jpg" loading="lazy">
+        <img id="img2" src="assets/img/3.jpg" loading="lazy">
+        <img id="img3" src="assets/img/5.jpg" loading="lazy">
+
+        <img id="img1" src="assets/img/1.jpg" loading="lazy">
+        <img id="img2" src="assets/img/4.jpg" loading="lazy">
+        <img id="img3" src="assets/img/2.jpg" loading="lazy">
+        <img id="img1" src="assets/img/6.jpg" loading="lazy">
+        <img id="img2" src="assets/img/3.jpg" loading="lazy">
+        <img id="img3" src="assets/img/5.jpg" loading="lazy">
+
+        <img id="img1" src="assets/img/1.jpg" loading="lazy">
+        <img id="img2" src="assets/img/4.jpg" loading="lazy">
+        <img id="img3" src="assets/img/2.jpg" loading="lazy">
+        <img id="img1" src="assets/img/6.jpg" loading="lazy">
+        <img id="img2" src="assets/img/3.jpg" loading="lazy">
+        <img id="img3" src="assets/img/5.jpg" loading="lazy"> -->
     </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="https://drive.google.com/uc?export=view&id=1-AAqYCE_X8DjgYmosv17x0HIDpYv8xyd"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Waves at Sea"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Yosemite National Park"
-      />
-    </div>
-  </div>
-  <!-- Gallery -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run(".gallery", {
+            animation: "slideIn"
+        });
+    </script>
+    
+</body>
+
 </html>
